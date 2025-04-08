@@ -2,6 +2,8 @@ package com.couponmoa.backend.domain.user.service;
 
 import com.couponmoa.backend.common.exception.ApplicationException;
 import com.couponmoa.backend.common.exception.ErrorCode;
+import com.couponmoa.backend.domain.subscribe.usercoupon.repository.UserCouponSubscribeRepository;
+import com.couponmoa.backend.domain.subscribe.userstore.repository.UserStoreSubscribeRepository;
 import com.couponmoa.backend.domain.user.dto.request.*;
 import com.couponmoa.backend.domain.user.dto.response.UserResponse;
 import com.couponmoa.backend.domain.user.entity.User;
@@ -30,6 +32,12 @@ public class UserServiceTest {
 
     @Mock
     private PasswordEncoder passwordEncoder;
+
+    @Mock
+    private UserCouponSubscribeRepository userCouponSubRepo;
+
+    @Mock
+    private UserStoreSubscribeRepository userStoreSubRepo;
 
     @InjectMocks
     private UserService userService;
