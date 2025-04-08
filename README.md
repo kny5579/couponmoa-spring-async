@@ -1,5 +1,5 @@
 # ApiResponse 사용법
-- 첫번 째 파라미터에는 data값을, 두번 째 파라미터에는 message값을 넣는다
+- 첫번 째 파라미터에는 data값을, 두번 째 파라미터에는 message값을 넣는다  
 - 자세한 내용은 com.couponmoa.backend.common.dto.ApiResponse 클래스 참조
   
 ## ApiResponse.success("Response 메시지");
